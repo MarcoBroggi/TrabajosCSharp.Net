@@ -8,7 +8,7 @@ namespace Base
 {
     public class Alumno : Universitario
     {
-        private Universidad.EClases claseQueToma;
+        private EClases claseQueToma;
         private EEstadoCuenta estadoCuenta;
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Base
         /// <param name="nacionalidad"></param>
         /// <param name="claseQueToma"></param>
         public Alumno(int id, string nombre, string apellido, string dni,
-                ENacionalidad nacionalidad, Universidad.EClases claseQueToma) :
+                ENacionalidad nacionalidad, EClases claseQueToma) :
                 base(id, nombre, apellido, dni, nacionalidad)
         {
             this.claseQueToma = claseQueToma;
@@ -45,7 +45,7 @@ namespace Base
         /// <param name="claseQueToma"></param>
         /// <param name="estadoCuenta"></param>
         public Alumno(int id, string nombre, string apellido, string dni,
-                ENacionalidad nacionalidad, Universidad.EClases claseQueToma,
+                ENacionalidad nacionalidad, EClases claseQueToma,
                 EEstadoCuenta estadoCuenta) : this(id, nombre, apellido,
                     dni, nacionalidad, claseQueToma)
         {
@@ -78,7 +78,7 @@ namespace Base
         /// <returns></returns>
         protected override string ParticiparEnClase()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
             try
             {
                 sb.AppendLine("Toma clases de  " + claseQueToma.ToString());
@@ -101,7 +101,7 @@ namespace Base
 
         ///Operadores logicos
 
-        public static bool operator ==(Alumno a, Universidad.EClases clase)
+        public static bool operator ==(Alumno a, EClases clase)
         {
             if (a.claseQueToma == clase &&
                    a.estadoCuenta != EEstadoCuenta.Deudor)
@@ -110,7 +110,8 @@ namespace Base
             }
             return false;
         }
-        public static bool operator !=(Alumno a, Universidad.EClases clase)
+
+        public static bool operator !=(Alumno a, EClases clase)
         {
             return !(a.claseQueToma == clase);
         }

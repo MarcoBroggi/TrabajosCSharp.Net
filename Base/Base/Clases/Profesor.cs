@@ -8,7 +8,7 @@ namespace Base
 {
     public class Profesor : Universitario
     {
-        private Queue<Universidad.EClases> clasesDelDia;
+        private Queue<EClases> clasesDelDia;
         private static Random random;
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Base
                 ENacionalidad nacionalidad) : base(id, nombre, apellido,
                 dni, nacionalidad)
         {
-            clasesDelDia = new Queue<Universidad.EClases>();
+            clasesDelDia = new Queue<EClases>();
             _randomClases();
         }
 
@@ -52,7 +52,7 @@ namespace Base
             try
             {
                 sb.AppendLine("CLASES DEL DIA:");
-                foreach (Universidad.EClases c in clasesDelDia)
+                foreach (EClases c in clasesDelDia)
                 {
                     sb.Append(" " + c.ToString());
                 }
@@ -91,22 +91,22 @@ namespace Base
         /// </summary>
         private void _randomClases()
         {
-            clasesDelDia.Enqueue((Universidad.EClases)random.Next(5));
+            clasesDelDia.Enqueue((EClases)random.Next(5));
             System.Threading.Thread.Sleep(1000);
-            clasesDelDia.Enqueue((Universidad.EClases)random.Next(4));
+            clasesDelDia.Enqueue((EClases)random.Next(4));
         }
 
         ///Operadores Logicos
-        public static bool operator ==(Profesor i, Universidad.EClases clase)
+        public static bool operator ==(Profesor i,EClases clase)
         {
-            foreach (Universidad.EClases c in i.clasesDelDia)
+            foreach (EClases c in i.clasesDelDia)
             {
                 if (clase == c)
                     return true;
             }
             return false;
         }
-        public static bool operator !=(Profesor i, Universidad.EClases clase)
+        public static bool operator !=(Profesor i,EClases clase)
         {
             return !(i == clase);
         }

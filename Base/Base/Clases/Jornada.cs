@@ -9,7 +9,7 @@ namespace Base
     public class Jornada 
     {
         private List<Alumno> alumnos;
-        private Universidad.EClases clase;
+        private EClases clase;
         private Profesor instructor;
 
         /// <summary>
@@ -25,10 +25,8 @@ namespace Base
         /// </summary>
         /// <param name="clase"></param>
         /// <param name="instructor"></param>
-        public Jornada(Universidad.EClases clase, Profesor instructor) : this()
+        public Jornada(EClases clase, Profesor instructor) : this()
         {
-            //this.alumnos = new List<Alumno>();
-
             this.clase = clase;
             this.instructor = instructor;
         }
@@ -40,9 +38,8 @@ namespace Base
         /// <returns></returns>
         public static bool Guardar(Jornada jornada)
         {
-            Texto texto = new Texto();
-            string fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-                    + "\\jornada.txt";
+            Texto texto = new();
+            string fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\jornada.txt";
             try
             {
                 texto.Guardar(fileName, jornada.ToString());
@@ -53,7 +50,7 @@ namespace Base
                 throw new ArchivosException("Error al guardar Jornada.txt", e);
             }
         }
-
+        
         /// <summary>
         /// Lee los datos del archivo txt, sino lanza un error controlado
         /// </summary>
@@ -61,9 +58,8 @@ namespace Base
         public string Leer()
         {
             Texto texto = new Texto();
-            string fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-                    + "jornada.txt";
-            string retorno = "";
+            string fileName = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "jornada.txt";
+            string retorno;
             try
             {
                 texto.Leer(fileName, out retorno);
@@ -76,22 +72,28 @@ namespace Base
         }
 
         /// <summary>
-        /// Imprime datos dela jornada, sobreescribiendo toString
+        /// Imprime datos de la jornada, sobreescribiendo toString
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
-            StringBuilder retorno = new StringBuilder();
-            retorno.AppendFormat("[---------------------------------------------]\n\n");
-            retorno.AppendFormat("Clase: {0}\n", clase.ToString());
-            retorno.AppendFormat(instructor.ToString());
-            retorno.AppendFormat("Alumnos: \n");
-            foreach (Alumno a in alumnos)
+            StringBuilder sb = new();
+            try
             {
-                retorno.AppendLine(a.ToString());
-                retorno.AppendLine("");
+                sb.AppendLine("[---------------------------------------------]\n");
+                sb.AppendLine("Clase: " + clase.ToString());
+                sb.AppendLine(instructor.ToString());
+                sb.AppendLine("Alumnos: ");
+                foreach (Alumno a in alumnos)
+                {
+                    sb.AppendLine(a.ToString());
+                }
             }
-            return retorno.ToString();
+            catch(ArgumentOutOfRangeException e)
+            {
+                return e.Message;
+            }
+            return sb.ToString();
         }
 
         ///Operadores Logicos
@@ -135,7 +137,7 @@ namespace Base
                 this.alumnos = value;
             }
         }
-        public Universidad.EClases Clase
+        public EClases Clase
         {
             get
             {

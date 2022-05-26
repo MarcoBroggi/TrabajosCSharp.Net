@@ -1,0 +1,16 @@
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\Base.exe
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\Base.deps.json
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\Base.runtimeconfig.json
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\Base.runtimeconfig.dev.json
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\Base.dll
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\ref\Base.dll
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\bin\Debug\net5.0\Base.pdb
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.csproj.AssemblyReference.cache
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.AssemblyInfoInputs.cache
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.AssemblyInfo.cs
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.csproj.CoreCompileInputs.cache
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.dll
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\ref\Base.dll
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.pdb
+C:\Users\Brogg\OneDrive\Documentos\TpsC#\TrabajosCSharp.Net\Base\Base\obj\Debug\net5.0\Base.genruntimeconfig.cache

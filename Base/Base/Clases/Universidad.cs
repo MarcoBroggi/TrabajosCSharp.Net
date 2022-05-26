@@ -71,10 +71,17 @@ namespace Base
         /// <returns></returns>
         private string MostrarDatos(Universidad uni)
         {
-            StringBuilder retorno = new StringBuilder();
+            StringBuilder retorno = new();
             foreach (Jornada j in this.jornadas)
             {
-                retorno.AppendLine(j.ToString());
+                try
+                {
+                    retorno.AppendLine(j.ToString());
+                }
+                catch(ArgumentOutOfRangeException e)
+                {
+                    return e.Message;
+                }
             }
             return retorno.ToString();
         }
@@ -240,15 +247,6 @@ namespace Base
             }
         }
 
-        /// <summary>
-        /// enimeracion de clases
-        /// </summary>
-        public enum EClases
-        {
-            Programacion,
-            Laboratorio,
-            Legislacion,
-            SPD
-        }
+      
     }
 }
