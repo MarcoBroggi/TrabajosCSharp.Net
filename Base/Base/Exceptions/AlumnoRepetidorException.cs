@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Base
 {
     [Serializable]
-    internal class AlumnoRepetidorException : Exception
+    public class AlumnoRepetidorException : Exception
     {
         public AlumnoRepetidorException()
         {

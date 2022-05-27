@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Base
 {
     [Serializable]
-    internal class ArchivosException : Exception
+    public class ArchivosException : Exception
     {
         public ArchivosException()
         {

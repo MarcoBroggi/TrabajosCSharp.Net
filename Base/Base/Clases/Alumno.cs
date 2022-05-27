@@ -116,6 +116,5 @@ namespace Base
             return !(a.claseQueToma == clase);
         }
 
-        
     }
 }

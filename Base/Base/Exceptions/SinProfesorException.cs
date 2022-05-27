@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Base
 {
     [Serializable]
-    internal class SinProfesorException : Exception
+    public class SinProfesorException : Exception
     {
         public SinProfesorException()
         {

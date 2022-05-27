@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Base
 {
     [Serializable]
-    internal class DniInvalidoException : Exception
+    public class DniInvalidoException : Exception
     {
         public DniInvalidoException()
         {
