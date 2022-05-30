@@ -73,8 +73,6 @@ namespace MiCalculadora
         {
             string resultadoAnterior = lblResultado.Text;
             lblResultado.Text = Operando.DecimalBinario(lblResultado.Text);
-            btnConvertirABinario.Enabled = false;
-            btnConvertirADecimal.Enabled = true;
             lstOperaciones.Items.Add(ConstruirCadena(resultadoAnterior,lblResultado.Text));
         }
         /// <summary>
@@ -86,8 +84,6 @@ namespace MiCalculadora
         {
             string resultadoAnterior = lblResultado.Text;
             lblResultado.Text = Operando.BinarioDecimal(lblResultado.Text);
-            btnConvertirABinario.Enabled = true;
-            btnConvertirADecimal.Enabled = false;
             lstOperaciones.Items.Add(ConstruirCadena(resultadoAnterior,lblResultado.Text));
         }
         /// <summary>
