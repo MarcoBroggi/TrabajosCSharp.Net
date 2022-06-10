@@ -1,0 +1,15 @@
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\WindowsFormsGet.exe.config
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\WindowsFormsGet.exe
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\WindowsFormsGet.pdb
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\ViewModels.dll
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\ViewModels.pdb
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.csproj.AssemblyReference.cache
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.Form1.resources
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.Properties.Resources.resources
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.csproj.GenerateResource.cache
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.csproj.CoreCompileInputs.cache
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.csproj.CopyComplete
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.exe
+C:\Users\Brogg\source\repos\PruebaApiGet\WindowsFormsGet\obj\Debug\WindowsFormsGet.pdb

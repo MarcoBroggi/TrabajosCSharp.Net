@@ -1,0 +1,6 @@
+C:\Users\Brogg\source\repos\PruebaApiGet\ViewModels\bin\Debug\ViewModels.dll
+C:\Users\Brogg\source\repos\PruebaApiGet\ViewModels\bin\Debug\ViewModels.pdb
+C:\Users\Brogg\source\repos\PruebaApiGet\ViewModels\obj\Debug\ViewModels.csproj.AssemblyReference.cache
+C:\Users\Brogg\source\repos\PruebaApiGet\ViewModels\obj\Debug\ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Brogg\source\repos\PruebaApiGet\ViewModels\obj\Debug\ViewModels.dll
+C:\Users\Brogg\source\repos\PruebaApiGet\ViewModels\obj\Debug\ViewModels.pdb
